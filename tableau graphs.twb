@@ -1,0 +1,2177 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20232.23.1012.1128                               -->
+<workbook original-version='18.1' source-build='2023.2.3 (20232.23.1012.1128)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='SBAnational' inline='true' name='federated.04j0cu214ujbyp1fkvviu1vb6wdg' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='SBAnational' name='textscan.0bed1p70wkcydo1ef7vf818dv41p'>
+            <connection class='textscan' directory='/Users/alemalvarez/Documents/code-studio-workspace/data analytics challenge' filename='SBAnational.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0bed1p70wkcydo1ef7vf818dv41p' name='SBAnational.csv' table='[SBAnational#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='LoanNr_ChkDgt' ordinal='0' />
+            <column datatype='string' name='Name' ordinal='1' />
+            <column datatype='string' name='City' ordinal='2' />
+            <column datatype='string' name='State' ordinal='3' />
+            <column datatype='integer' name='Zip' ordinal='4' />
+            <column datatype='string' name='Bank' ordinal='5' />
+            <column datatype='string' name='BankState' ordinal='6' />
+            <column datatype='integer' name='NAICS' ordinal='7' />
+            <column datatype='date' name='ApprovalDate' ordinal='8' />
+            <column datatype='integer' name='ApprovalFY' ordinal='9' />
+            <column datatype='integer' name='Term' ordinal='10' />
+            <column datatype='integer' name='NoEmp' ordinal='11' />
+            <column datatype='integer' name='NewExist' ordinal='12' />
+            <column datatype='integer' name='CreateJob' ordinal='13' />
+            <column datatype='integer' name='RetainedJob' ordinal='14' />
+            <column datatype='integer' name='FranchiseCode' ordinal='15' />
+            <column datatype='integer' name='UrbanRural' ordinal='16' />
+            <column datatype='string' name='RevLineCr' ordinal='17' />
+            <column datatype='string' name='LowDoc' ordinal='18' />
+            <column datatype='date' name='ChgOffDate' ordinal='19' />
+            <column datatype='date' name='DisbursementDate' ordinal='20' />
+            <column datatype='real' name='DisbursementGross' ordinal='21' />
+            <column datatype='real' name='BalanceGross' ordinal='22' />
+            <column datatype='string' name='MIS_Status' ordinal='23' />
+            <column datatype='real' name='ChgOffPrinGr' ordinal='24' />
+            <column datatype='real' name='GrAppv' ordinal='25' />
+            <column datatype='real' name='SBA_Appv' ordinal='26' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0bed1p70wkcydo1ef7vf818dv41p' name='SBAnational.csv' table='[SBAnational#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='LoanNr_ChkDgt' ordinal='0' />
+            <column datatype='string' name='Name' ordinal='1' />
+            <column datatype='string' name='City' ordinal='2' />
+            <column datatype='string' name='State' ordinal='3' />
+            <column datatype='integer' name='Zip' ordinal='4' />
+            <column datatype='string' name='Bank' ordinal='5' />
+            <column datatype='string' name='BankState' ordinal='6' />
+            <column datatype='integer' name='NAICS' ordinal='7' />
+            <column datatype='date' name='ApprovalDate' ordinal='8' />
+            <column datatype='integer' name='ApprovalFY' ordinal='9' />
+            <column datatype='integer' name='Term' ordinal='10' />
+            <column datatype='integer' name='NoEmp' ordinal='11' />
+            <column datatype='integer' name='NewExist' ordinal='12' />
+            <column datatype='integer' name='CreateJob' ordinal='13' />
+            <column datatype='integer' name='RetainedJob' ordinal='14' />
+            <column datatype='integer' name='FranchiseCode' ordinal='15' />
+            <column datatype='integer' name='UrbanRural' ordinal='16' />
+            <column datatype='string' name='RevLineCr' ordinal='17' />
+            <column datatype='string' name='LowDoc' ordinal='18' />
+            <column datatype='date' name='ChgOffDate' ordinal='19' />
+            <column datatype='date' name='DisbursementDate' ordinal='20' />
+            <column datatype='real' name='DisbursementGross' ordinal='21' />
+            <column datatype='real' name='BalanceGross' ordinal='22' />
+            <column datatype='string' name='MIS_Status' ordinal='23' />
+            <column datatype='real' name='ChgOffPrinGr' ordinal='24' />
+            <column datatype='real' name='GrAppv' ordinal='25' />
+            <column datatype='real' name='SBA_Appv' ordinal='26' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[SBAnational.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LoanNr_ChkDgt</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[LoanNr_ChkDgt]</local-name>
+            <parent-name>[SBAnational.csv]</parent-name>
+            <remote-alias>LoanNr_ChkDgt</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[SBAnational.csv_D9A1403D7B304F07BE2B4212C786765D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Name]</local-name>
+            <parent-name>[SBAnational.csv]</parent-name>
+            <remote-alias>Name</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[SBAnational.csv_D9A1403D7B304F07BE2B4212C786765D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>City</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[City]</local-name>
+            <parent-name>[SBAnational.csv]</parent-name>
+            <remote-alias>City</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[SBAnational.csv_D9A1403D7B304F07BE2B4212C786765D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[State]</local-name>
+            <parent-name>[SBAnational.csv]</parent-name>
+            <remote-alias>State</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[SBAnational.csv_D9A1403D7B304F07BE2B4212C786765D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Zip</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Zip]</local-name>
+            <parent-name>[SBAnational.csv]</parent-name>
+            <remote-alias>Zip</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[SBAnational.csv_D9A1403D7B304F07BE2B4212C786765D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Bank</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Bank]</local-name>
+            <parent-name>[SBAnational.csv]</parent-name>
+            <remote-alias>Bank</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[SBAnational.csv_D9A1403D7B304F07BE2B4212C786765D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BankState</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[BankState]</local-name>
+            <parent-name>[SBAnational.csv]</parent-name>
+            <remote-alias>BankState</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[SBAnational.csv_D9A1403D7B304F07BE2B4212C786765D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NAICS</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[NAICS]</local-name>
+            <parent-name>[SBAnational.csv]</parent-name>
+            <remote-alias>NAICS</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[SBAnational.csv_D9A1403D7B304F07BE2B4212C786765D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ApprovalDate</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[ApprovalDate]</local-name>
+            <parent-name>[SBAnational.csv]</parent-name>
+            <remote-alias>ApprovalDate</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[SBAnational.csv_D9A1403D7B304F07BE2B4212C786765D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ApprovalFY</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ApprovalFY]</local-name>
+            <parent-name>[SBAnational.csv]</parent-name>
+            <remote-alias>ApprovalFY</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[SBAnational.csv_D9A1403D7B304F07BE2B4212C786765D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Term</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Term]</local-name>
+            <parent-name>[SBAnational.csv]</parent-name>
+            <remote-alias>Term</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[SBAnational.csv_D9A1403D7B304F07BE2B4212C786765D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NoEmp</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[NoEmp]</local-name>
+            <parent-name>[SBAnational.csv]</parent-name>
+            <remote-alias>NoEmp</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[SBAnational.csv_D9A1403D7B304F07BE2B4212C786765D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NewExist</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[NewExist]</local-name>
+            <parent-name>[SBAnational.csv]</parent-name>
+            <remote-alias>NewExist</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[SBAnational.csv_D9A1403D7B304F07BE2B4212C786765D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CreateJob</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CreateJob]</local-name>
+            <parent-name>[SBAnational.csv]</parent-name>
+            <remote-alias>CreateJob</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[SBAnational.csv_D9A1403D7B304F07BE2B4212C786765D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RetainedJob</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[RetainedJob]</local-name>
+            <parent-name>[SBAnational.csv]</parent-name>
+            <remote-alias>RetainedJob</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[SBAnational.csv_D9A1403D7B304F07BE2B4212C786765D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FranchiseCode</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[FranchiseCode]</local-name>
+            <parent-name>[SBAnational.csv]</parent-name>
+            <remote-alias>FranchiseCode</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[SBAnational.csv_D9A1403D7B304F07BE2B4212C786765D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>UrbanRural</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[UrbanRural]</local-name>
+            <parent-name>[SBAnational.csv]</parent-name>
+            <remote-alias>UrbanRural</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[SBAnational.csv_D9A1403D7B304F07BE2B4212C786765D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RevLineCr</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[RevLineCr]</local-name>
+            <parent-name>[SBAnational.csv]</parent-name>
+            <remote-alias>RevLineCr</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[SBAnational.csv_D9A1403D7B304F07BE2B4212C786765D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LowDoc</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[LowDoc]</local-name>
+            <parent-name>[SBAnational.csv]</parent-name>
+            <remote-alias>LowDoc</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[SBAnational.csv_D9A1403D7B304F07BE2B4212C786765D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ChgOffDate</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[ChgOffDate]</local-name>
+            <parent-name>[SBAnational.csv]</parent-name>
+            <remote-alias>ChgOffDate</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[SBAnational.csv_D9A1403D7B304F07BE2B4212C786765D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DisbursementDate</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[DisbursementDate]</local-name>
+            <parent-name>[SBAnational.csv]</parent-name>
+            <remote-alias>DisbursementDate</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[SBAnational.csv_D9A1403D7B304F07BE2B4212C786765D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DisbursementGross</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[DisbursementGross]</local-name>
+            <parent-name>[SBAnational.csv]</parent-name>
+            <remote-alias>DisbursementGross</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[SBAnational.csv_D9A1403D7B304F07BE2B4212C786765D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BalanceGross</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[BalanceGross]</local-name>
+            <parent-name>[SBAnational.csv]</parent-name>
+            <remote-alias>BalanceGross</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[SBAnational.csv_D9A1403D7B304F07BE2B4212C786765D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MIS_Status</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[MIS_Status]</local-name>
+            <parent-name>[SBAnational.csv]</parent-name>
+            <remote-alias>MIS_Status</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[SBAnational.csv_D9A1403D7B304F07BE2B4212C786765D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ChgOffPrinGr</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ChgOffPrinGr]</local-name>
+            <parent-name>[SBAnational.csv]</parent-name>
+            <remote-alias>ChgOffPrinGr</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[SBAnational.csv_D9A1403D7B304F07BE2B4212C786765D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GrAppv</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[GrAppv]</local-name>
+            <parent-name>[SBAnational.csv]</parent-name>
+            <remote-alias>GrAppv</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[SBAnational.csv_D9A1403D7B304F07BE2B4212C786765D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SBA_Appv</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[SBA_Appv]</local-name>
+            <parent-name>[SBAnational.csv]</parent-name>
+            <remote-alias>SBA_Appv</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[SBAnational.csv_D9A1403D7B304F07BE2B4212C786765D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Approval Date' datatype='date' name='[ApprovalDate]' role='dimension' type='ordinal' />
+      <column caption='Approval FY' datatype='integer' name='[ApprovalFY]' role='dimension' type='quantitative' />
+      <column aggregation='Sum' caption='Balance Gross' datatype='real' name='[BalanceGross]' role='dimension' type='ordinal' />
+      <column caption='Bank State' datatype='string' name='[BankState]' role='dimension' type='nominal' />
+      <column caption='CHATGPT BT' datatype='real' name='[Calculation_3534129458862702595]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM(IF [MIS_Status] = &apos;CHGOFF&apos; THEN 1 ELSE 0 END) / COUNTD([LoanNr_ChkDgt])' />
+      </column>
+      <column caption='Chg Off Date' datatype='date' name='[ChgOffDate]' role='dimension' type='ordinal' />
+      <column caption='Chg Off Prin Gr' datatype='real' name='[ChgOffPrinGr]' role='measure' type='quantitative' />
+      <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column aggregation='None' datatype='integer' name='[Create Job (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='0' formula='[CreateJob]' peg='0' size='1' />
+      </column>
+      <column caption='Create Job' datatype='integer' name='[CreateJob]' role='measure' type='quantitative' />
+      <column caption='Disbursement Date' datatype='date' name='[DisbursementDate]' role='dimension' type='ordinal' />
+      <column caption='Disbursement Gross' datatype='real' name='[DisbursementGross]' role='measure' type='quantitative' />
+      <column caption='Franchise Code' datatype='integer' name='[FranchiseCode]' role='dimension' type='ordinal' />
+      <column aggregation='None' datatype='integer' name='[Gr Appv (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='4' formula='[GrAppv]' peg='0' size='83268' />
+      </column>
+      <column caption='Gr Appv' datatype='real' name='[GrAppv]' role='measure' type='quantitative' />
+      <column aggregation='Count' caption='LoanNr ChkDgt' datatype='integer' name='[LoanNr_ChkDgt]' role='measure' type='quantitative' />
+      <column caption='Low Doc' datatype='string' name='[LowDoc]' role='dimension' type='nominal' />
+      <column aggregation='CountD' caption='MIS Status' datatype='string' name='[MIS_Status]' role='dimension' type='nominal' />
+      <column caption='Naics' datatype='integer' name='[NAICS]' role='measure' type='quantitative' />
+      <column caption='New Exist' datatype='integer' name='[NewExist]' role='measure' type='quantitative' />
+      <column aggregation='None' datatype='integer' name='[No Emp (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='0' formula='[NoEmp]' peg='0' size='1' />
+      </column>
+      <column caption='No Emp' datatype='integer' name='[NoEmp]' role='measure' type='quantitative' />
+      <column aggregation='None' datatype='integer' name='[Retained Job (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='0' formula='[RetainedJob]' peg='0' size='5' />
+      </column>
+      <column caption='Retained Job' datatype='integer' name='[RetainedJob]' role='measure' type='quantitative' />
+      <column caption='Rev Line Cr' datatype='string' name='[RevLineCr]' role='dimension' type='nominal' />
+      <column caption='SBA Appv' datatype='real' name='[SBA_Appv]' role='measure' type='quantitative' />
+      <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column aggregation='None' datatype='integer' name='[Term (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='1' formula='[Term]' peg='0' size='22.1' />
+      </column>
+      <column datatype='integer' name='[Term]' role='measure' type='quantitative' />
+      <column aggregation='Sum' caption='Urban Rural' datatype='integer' name='[UrbanRural]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' datatype='integer' default-format='*00000' name='[Zip]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+      <_.fcp.ObjectModelTableType.true...column caption='SBAnational.csv' datatype='table' name='[__tableau_internal_object_id__].[SBAnational.csv_D9A1403D7B304F07BE2B4212C786765D]' role='measure' type='quantitative' />
+      <column-instance column='[MIS_Status]' derivation='None' name='[none:MIS_Status:nk]' pivot='key' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:MIS_Status:nk]' type='palette'>
+            <map to='#59a14f'>
+              <bucket>&quot;P I F&quot;</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;CHGOFF&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='SBAnational.csv' id='SBAnational.csv_D9A1403D7B304F07BE2B4212C786765D'>
+            <properties context=''>
+              <relation connection='textscan.0bed1p70wkcydo1ef7vf818dv41p' name='SBAnational.csv' table='[SBAnational#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='LoanNr_ChkDgt' ordinal='0' />
+                  <column datatype='string' name='Name' ordinal='1' />
+                  <column datatype='string' name='City' ordinal='2' />
+                  <column datatype='string' name='State' ordinal='3' />
+                  <column datatype='integer' name='Zip' ordinal='4' />
+                  <column datatype='string' name='Bank' ordinal='5' />
+                  <column datatype='string' name='BankState' ordinal='6' />
+                  <column datatype='integer' name='NAICS' ordinal='7' />
+                  <column datatype='date' name='ApprovalDate' ordinal='8' />
+                  <column datatype='integer' name='ApprovalFY' ordinal='9' />
+                  <column datatype='integer' name='Term' ordinal='10' />
+                  <column datatype='integer' name='NoEmp' ordinal='11' />
+                  <column datatype='integer' name='NewExist' ordinal='12' />
+                  <column datatype='integer' name='CreateJob' ordinal='13' />
+                  <column datatype='integer' name='RetainedJob' ordinal='14' />
+                  <column datatype='integer' name='FranchiseCode' ordinal='15' />
+                  <column datatype='integer' name='UrbanRural' ordinal='16' />
+                  <column datatype='string' name='RevLineCr' ordinal='17' />
+                  <column datatype='string' name='LowDoc' ordinal='18' />
+                  <column datatype='date' name='ChgOffDate' ordinal='19' />
+                  <column datatype='date' name='DisbursementDate' ordinal='20' />
+                  <column datatype='real' name='DisbursementGross' ordinal='21' />
+                  <column datatype='real' name='BalanceGross' ordinal='22' />
+                  <column datatype='string' name='MIS_Status' ordinal='23' />
+                  <column datatype='real' name='ChgOffPrinGr' ordinal='24' />
+                  <column datatype='real' name='GrAppv' ordinal='25' />
+                  <column datatype='real' name='SBA_Appv' ordinal='26' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Bar bank'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='SBAnational' name='federated.04j0cu214ujbyp1fkvviu1vb6wdg' />
+          </datasources>
+          <datasource-dependencies datasource='federated.04j0cu214ujbyp1fkvviu1vb6wdg'>
+            <column datatype='string' name='[Bank]' role='dimension' type='nominal' />
+            <column caption='CHATGPT BT' datatype='real' name='[Calculation_3534129458862702595]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM(IF [MIS_Status] = &apos;CHGOFF&apos; THEN 1 ELSE 0 END) / COUNTD([LoanNr_ChkDgt])' />
+            </column>
+            <column aggregation='Count' caption='LoanNr ChkDgt' datatype='integer' name='[LoanNr_ChkDgt]' role='measure' type='quantitative' />
+            <column aggregation='CountD' caption='MIS Status' datatype='string' name='[MIS_Status]' role='dimension' type='nominal' />
+            <column-instance column='[Bank]' derivation='None' name='[none:Bank:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_3534129458862702595]' derivation='User' name='[usr:Calculation_3534129458862702595:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.04j0cu214ujbyp1fkvviu1vb6wdg].[none:Bank:nk]'>
+            <groupfilter count='20' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='COUNT([LoanNr_ChkDgt])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:Bank:nk]' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-manual-selection-is-empty='true' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.04j0cu214ujbyp1fkvviu1vb6wdg].[none:Bank:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.04j0cu214ujbyp1fkvviu1vb6wdg].[usr:Calculation_3534129458862702595:qk]</rows>
+        <cols>[federated.04j0cu214ujbyp1fkvviu1vb6wdg].[none:Bank:nk]</cols>
+      </table>
+      <simple-id uuid='{1F8ADC13-10F3-4330-A7C5-422A0478909E}' />
+    </worksheet>
+    <worksheet name='Jobs'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='SBAnational' name='federated.04j0cu214ujbyp1fkvviu1vb6wdg' />
+          </datasources>
+          <datasource-dependencies datasource='federated.04j0cu214ujbyp1fkvviu1vb6wdg'>
+            <column caption='Create Job' datatype='integer' name='[CreateJob]' role='measure' type='quantitative' />
+            <column aggregation='Count' caption='LoanNr ChkDgt' datatype='integer' name='[LoanNr_ChkDgt]' role='measure' type='quantitative' />
+            <column aggregation='CountD' caption='MIS Status' datatype='string' name='[MIS_Status]' role='dimension' type='nominal' />
+            <column caption='Retained Job' datatype='integer' name='[RetainedJob]' role='measure' type='quantitative' />
+            <column-instance column='[LoanNr_ChkDgt]' derivation='None' name='[none:LoanNr_ChkDgt:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[MIS_Status]' derivation='None' name='[none:MIS_Status:nk]' pivot='key' type='nominal' />
+            <column-instance column='[CreateJob]' derivation='Sum' name='[sum:CreateJob:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[RetainedJob]' derivation='Sum' name='[sum:RetainedJob:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.04j0cu214ujbyp1fkvviu1vb6wdg].[sum:RetainedJob:qk]' field-type='quantitative' scale='log' scope='rows' type='space' />
+            <encoding attr='space' class='0' field='[federated.04j0cu214ujbyp1fkvviu1vb6wdg].[sum:CreateJob:qk]' field-type='quantitative' scale='log' scope='cols' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.04j0cu214ujbyp1fkvviu1vb6wdg].[none:MIS_Status:nk]' />
+              <size column='[federated.04j0cu214ujbyp1fkvviu1vb6wdg].[none:LoanNr_ChkDgt:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.04j0cu214ujbyp1fkvviu1vb6wdg].[sum:RetainedJob:qk]</rows>
+        <cols>[federated.04j0cu214ujbyp1fkvviu1vb6wdg].[sum:CreateJob:qk]</cols>
+      </table>
+      <simple-id uuid='{58A8A9C6-D4F3-4949-820D-7FF4FEEA49D4}' />
+    </worksheet>
+    <worksheet name='Low doc'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='SBAnational' name='federated.04j0cu214ujbyp1fkvviu1vb6wdg' />
+          </datasources>
+          <datasource-dependencies datasource='federated.04j0cu214ujbyp1fkvviu1vb6wdg'>
+            <column aggregation='Count' caption='LoanNr ChkDgt' datatype='integer' name='[LoanNr_ChkDgt]' role='measure' type='quantitative' />
+            <column caption='Low Doc' datatype='string' name='[LowDoc]' role='dimension' type='nominal' />
+            <column aggregation='CountD' caption='MIS Status' datatype='string' name='[MIS_Status]' role='dimension' type='nominal' />
+            <column-instance column='[LoanNr_ChkDgt]' derivation='Count' name='[cnt:LoanNr_ChkDgt:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[LowDoc]' derivation='None' name='[none:LowDoc:nk]' pivot='key' type='nominal' />
+            <column-instance column='[MIS_Status]' derivation='None' name='[none:MIS_Status:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.04j0cu214ujbyp1fkvviu1vb6wdg].[none:LowDoc:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:LowDoc:nk]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[none:LowDoc:nk]' member='&quot;N&quot;' />
+                <groupfilter function='member' level='[none:LowDoc:nk]' member='&quot;Y&quot;' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.04j0cu214ujbyp1fkvviu1vb6wdg].[none:LowDoc:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.04j0cu214ujbyp1fkvviu1vb6wdg].[none:MIS_Status:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.04j0cu214ujbyp1fkvviu1vb6wdg].[cnt:LoanNr_ChkDgt:qk]</rows>
+        <cols>[federated.04j0cu214ujbyp1fkvviu1vb6wdg].[none:LowDoc:nk]</cols>
+      </table>
+      <simple-id uuid='{3A10690A-6FC4-48F5-B9F1-E08A34A2B2F8}' />
+    </worksheet>
+    <worksheet name='Pie bank'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='SBAnational' name='federated.04j0cu214ujbyp1fkvviu1vb6wdg' />
+          </datasources>
+          <datasource-dependencies datasource='federated.04j0cu214ujbyp1fkvviu1vb6wdg'>
+            <column datatype='string' name='[Bank]' role='dimension' type='nominal' />
+            <_.fcp.ObjectModelTableType.false...column caption='SBAnational.csv' datatype='integer' name='[__tableau_internal_object_id__].[SBAnational.csv_D9A1403D7B304F07BE2B4212C786765D]' role='measure' type='quantitative' />
+            <column aggregation='CountD' caption='MIS Status' datatype='string' name='[MIS_Status]' role='dimension' type='nominal' />
+            <_.fcp.ObjectModelTableType.true...column caption='SBAnational.csv' datatype='table' name='[__tableau_internal_object_id__].[SBAnational.csv_D9A1403D7B304F07BE2B4212C786765D]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[SBAnational.csv_D9A1403D7B304F07BE2B4212C786765D]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:SBAnational.csv_D9A1403D7B304F07BE2B4212C786765D:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Bank]' derivation='None' name='[none:Bank:nk]' pivot='key' type='nominal' />
+            <column-instance column='[MIS_Status]' derivation='None' name='[none:MIS_Status:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <computed-sort column='[federated.04j0cu214ujbyp1fkvviu1vb6wdg].[none:Bank:nk]' direction='DESC' using='[federated.04j0cu214ujbyp1fkvviu1vb6wdg].[__tableau_internal_object_id__].[cnt:SBAnational.csv_D9A1403D7B304F07BE2B4212C786765D:qk]' />
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.04j0cu214ujbyp1fkvviu1vb6wdg].[__tableau_internal_object_id__].[cnt:SBAnational.csv_D9A1403D7B304F07BE2B4212C786765D:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.04j0cu214ujbyp1fkvviu1vb6wdg].[none:MIS_Status:nk]' />
+              <size column='[federated.04j0cu214ujbyp1fkvviu1vb6wdg].[__tableau_internal_object_id__].[cnt:SBAnational.csv_D9A1403D7B304F07BE2B4212C786765D:qk]' />
+              <text column='[federated.04j0cu214ujbyp1fkvviu1vb6wdg].[__tableau_internal_object_id__].[cnt:SBAnational.csv_D9A1403D7B304F07BE2B4212C786765D:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.3293370008468628' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.04j0cu214ujbyp1fkvviu1vb6wdg].[none:Bank:nk]</cols>
+      </table>
+      <simple-id uuid='{F5DE2619-6665-4205-91D0-8D7CDFE707CB}' />
+    </worksheet>
+    <worksheet name='Revolving Line'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='SBAnational' name='federated.04j0cu214ujbyp1fkvviu1vb6wdg' />
+          </datasources>
+          <datasource-dependencies datasource='federated.04j0cu214ujbyp1fkvviu1vb6wdg'>
+            <column aggregation='Count' caption='LoanNr ChkDgt' datatype='integer' name='[LoanNr_ChkDgt]' role='measure' type='quantitative' />
+            <column aggregation='CountD' caption='MIS Status' datatype='string' name='[MIS_Status]' role='dimension' type='nominal' />
+            <column caption='Rev Line Cr' datatype='string' name='[RevLineCr]' role='dimension' type='nominal' />
+            <column-instance column='[LoanNr_ChkDgt]' derivation='Count' name='[cnt:LoanNr_ChkDgt:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[MIS_Status]' derivation='None' name='[none:MIS_Status:nk]' pivot='key' type='nominal' />
+            <column-instance column='[RevLineCr]' derivation='None' name='[none:RevLineCr:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.04j0cu214ujbyp1fkvviu1vb6wdg].[none:MIS_Status:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.04j0cu214ujbyp1fkvviu1vb6wdg].[cnt:LoanNr_ChkDgt:qk]</rows>
+        <cols>[federated.04j0cu214ujbyp1fkvviu1vb6wdg].[none:RevLineCr:nk]</cols>
+      </table>
+      <simple-id uuid='{BC33F5FA-89C6-4BD3-BBE8-7D9B641967C7}' />
+    </worksheet>
+    <worksheet name='Sheet 16'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='SBAnational' name='federated.04j0cu214ujbyp1fkvviu1vb6wdg' />
+          </datasources>
+          <datasource-dependencies datasource='federated.04j0cu214ujbyp1fkvviu1vb6wdg'>
+            <column aggregation='None' datatype='integer' name='[Gr Appv (bin)]' role='dimension' type='quantitative'>
+              <calculation class='bin' decimals='4' formula='[GrAppv]' peg='0' size='83268' />
+            </column>
+            <column caption='Gr Appv' datatype='real' name='[GrAppv]' role='measure' type='quantitative' />
+            <column aggregation='CountD' caption='MIS Status' datatype='string' name='[MIS_Status]' role='dimension' type='nominal' />
+            <column-instance column='[GrAppv]' derivation='Count' name='[cnt:GrAppv:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Gr Appv (bin)]' derivation='None' name='[none:Gr Appv (bin):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[MIS_Status]' derivation='None' name='[none:MIS_Status:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.04j0cu214ujbyp1fkvviu1vb6wdg].[none:Gr Appv (bin):qk]' field-type='quantitative' scale='log' scope='cols' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-left' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+            <encodings>
+              <color column='[federated.04j0cu214ujbyp1fkvviu1vb6wdg].[none:MIS_Status:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.04j0cu214ujbyp1fkvviu1vb6wdg].[cnt:GrAppv:qk]</rows>
+        <cols>[federated.04j0cu214ujbyp1fkvviu1vb6wdg].[none:Gr Appv (bin):qk]</cols>
+        <show-full-range>
+          <column>[federated.04j0cu214ujbyp1fkvviu1vb6wdg].[Gr Appv (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{D0611533-909A-49B0-AFFA-3BA692D1A0E0}' />
+    </worksheet>
+    <worksheet name='Sheet 17'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='SBAnational' name='federated.04j0cu214ujbyp1fkvviu1vb6wdg' />
+          </datasources>
+          <datasource-dependencies datasource='federated.04j0cu214ujbyp1fkvviu1vb6wdg'>
+            <column aggregation='None' datatype='integer' name='[Create Job (bin)]' role='dimension' type='quantitative'>
+              <calculation class='bin' decimals='0' formula='[CreateJob]' peg='0' size='1' />
+            </column>
+            <column caption='Create Job' datatype='integer' name='[CreateJob]' role='measure' type='quantitative' />
+            <column aggregation='Count' caption='LoanNr ChkDgt' datatype='integer' name='[LoanNr_ChkDgt]' role='measure' type='quantitative' />
+            <column aggregation='CountD' caption='MIS Status' datatype='string' name='[MIS_Status]' role='dimension' type='nominal' />
+            <column-instance column='[LoanNr_ChkDgt]' derivation='Count' name='[cnt:LoanNr_ChkDgt:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Create Job (bin)]' derivation='None' name='[none:Create Job (bin):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[MIS_Status]' derivation='None' name='[none:MIS_Status:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.04j0cu214ujbyp1fkvviu1vb6wdg].[none:Create Job (bin):qk]' field-type='quantitative' max='50.0' min='0.0' range-type='fixed' scope='cols' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-left' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+            <encodings>
+              <color column='[federated.04j0cu214ujbyp1fkvviu1vb6wdg].[none:MIS_Status:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.04j0cu214ujbyp1fkvviu1vb6wdg].[cnt:LoanNr_ChkDgt:qk]</rows>
+        <cols>[federated.04j0cu214ujbyp1fkvviu1vb6wdg].[none:Create Job (bin):qk]</cols>
+      </table>
+      <simple-id uuid='{743C3D7D-628D-4B2E-B053-9E1FCC63B327}' />
+    </worksheet>
+    <worksheet name='Sheet 18'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='SBAnational' name='federated.04j0cu214ujbyp1fkvviu1vb6wdg' />
+          </datasources>
+          <datasource-dependencies datasource='federated.04j0cu214ujbyp1fkvviu1vb6wdg'>
+            <column aggregation='Sum' caption='Balance Gross' datatype='real' name='[BalanceGross]' role='dimension' type='ordinal' />
+            <column aggregation='Count' caption='LoanNr ChkDgt' datatype='integer' name='[LoanNr_ChkDgt]' role='measure' type='quantitative' />
+            <column aggregation='CountD' caption='MIS Status' datatype='string' name='[MIS_Status]' role='dimension' type='nominal' />
+            <column-instance column='[LoanNr_ChkDgt]' derivation='Count' name='[cnt:LoanNr_ChkDgt:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[BalanceGross]' derivation='None' name='[none:BalanceGross:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[MIS_Status]' derivation='None' name='[none:MIS_Status:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.04j0cu214ujbyp1fkvviu1vb6wdg].[none:MIS_Status:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.04j0cu214ujbyp1fkvviu1vb6wdg].[cnt:LoanNr_ChkDgt:qk]</rows>
+        <cols>[federated.04j0cu214ujbyp1fkvviu1vb6wdg].[none:BalanceGross:ok]</cols>
+      </table>
+      <simple-id uuid='{6F7C5311-1160-4779-A178-EDB274CF4380}' />
+    </worksheet>
+    <worksheet name='Sheet 19'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='SBAnational' name='federated.04j0cu214ujbyp1fkvviu1vb6wdg' />
+          </datasources>
+          <datasource-dependencies datasource='federated.04j0cu214ujbyp1fkvviu1vb6wdg'>
+            <column aggregation='None' datatype='integer' name='[Retained Job (bin)]' role='dimension' type='quantitative'>
+              <calculation class='bin' decimals='0' formula='[RetainedJob]' peg='0' size='5' />
+            </column>
+            <column caption='Retained Job' datatype='integer' name='[RetainedJob]' role='measure' type='quantitative' />
+            <column-instance column='[RetainedJob]' derivation='Count' name='[cnt:RetainedJob:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Retained Job (bin)]' derivation='None' name='[none:Retained Job (bin):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-left' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+          </pane>
+        </panes>
+        <rows>[federated.04j0cu214ujbyp1fkvviu1vb6wdg].[cnt:RetainedJob:qk]</rows>
+        <cols>[federated.04j0cu214ujbyp1fkvviu1vb6wdg].[none:Retained Job (bin):qk]</cols>
+        <show-full-range>
+          <column>[federated.04j0cu214ujbyp1fkvviu1vb6wdg].[none:Retained Job (bin):qk]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{176D616B-9A9A-4AC3-A61C-F609952829C6}' />
+    </worksheet>
+    <worksheet name='Sheet 20'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='SBAnational' name='federated.04j0cu214ujbyp1fkvviu1vb6wdg' />
+          </datasources>
+          <datasource-dependencies datasource='federated.04j0cu214ujbyp1fkvviu1vb6wdg'>
+            <column aggregation='CountD' caption='MIS Status' datatype='string' name='[MIS_Status]' role='dimension' type='nominal' />
+            <column aggregation='None' datatype='integer' name='[No Emp (bin)]' role='dimension' type='quantitative'>
+              <calculation class='bin' decimals='0' formula='[NoEmp]' peg='0' size='1' />
+            </column>
+            <column caption='No Emp' datatype='integer' name='[NoEmp]' role='measure' type='quantitative' />
+            <column-instance column='[NoEmp]' derivation='Count' name='[cnt:NoEmp:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[MIS_Status]' derivation='None' name='[none:MIS_Status:nk]' pivot='key' type='nominal' />
+            <column-instance column='[No Emp (bin)]' derivation='None' name='[none:No Emp (bin):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[NoEmp]' derivation='None' name='[none:NoEmp:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.04j0cu214ujbyp1fkvviu1vb6wdg].[none:NoEmp:qk]' included-values='in-range'>
+            <min>0</min>
+            <max>50</max>
+          </filter>
+          <slices>
+            <column>[federated.04j0cu214ujbyp1fkvviu1vb6wdg].[none:NoEmp:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='width' field='[federated.04j0cu214ujbyp1fkvviu1vb6wdg].[cnt:NoEmp:qk]' value='68' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-left' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+            <encodings>
+              <color column='[federated.04j0cu214ujbyp1fkvviu1vb6wdg].[none:MIS_Status:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.04j0cu214ujbyp1fkvviu1vb6wdg].[cnt:NoEmp:qk]</rows>
+        <cols>[federated.04j0cu214ujbyp1fkvviu1vb6wdg].[none:No Emp (bin):qk]</cols>
+        <show-full-range>
+          <column>[federated.04j0cu214ujbyp1fkvviu1vb6wdg].[No Emp (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{82A051BB-B9F8-427B-9857-3C29D433DBD4}' />
+    </worksheet>
+    <worksheet name='Sheet 4'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='SBAnational' name='federated.04j0cu214ujbyp1fkvviu1vb6wdg' />
+          </datasources>
+          <datasource-dependencies datasource='federated.04j0cu214ujbyp1fkvviu1vb6wdg'>
+            <column caption='Bank State' datatype='string' name='[BankState]' role='dimension' type='nominal' />
+            <_.fcp.ObjectModelTableType.false...column caption='SBAnational.csv' datatype='integer' name='[__tableau_internal_object_id__].[SBAnational.csv_D9A1403D7B304F07BE2B4212C786765D]' role='measure' type='quantitative' />
+            <column aggregation='CountD' caption='MIS Status' datatype='string' name='[MIS_Status]' role='dimension' type='nominal' />
+            <_.fcp.ObjectModelTableType.true...column caption='SBAnational.csv' datatype='table' name='[__tableau_internal_object_id__].[SBAnational.csv_D9A1403D7B304F07BE2B4212C786765D]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[SBAnational.csv_D9A1403D7B304F07BE2B4212C786765D]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:SBAnational.csv_D9A1403D7B304F07BE2B4212C786765D:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[BankState]' derivation='None' name='[none:BankState:nk]' pivot='key' type='nominal' />
+            <column-instance column='[MIS_Status]' derivation='None' name='[none:MIS_Status:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <computed-sort column='[federated.04j0cu214ujbyp1fkvviu1vb6wdg].[none:BankState:nk]' direction='DESC' using='[federated.04j0cu214ujbyp1fkvviu1vb6wdg].[__tableau_internal_object_id__].[cnt:SBAnational.csv_D9A1403D7B304F07BE2B4212C786765D:qk]' />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[federated.04j0cu214ujbyp1fkvviu1vb6wdg].[none:MIS_Status:nk]' />
+              <size column='[federated.04j0cu214ujbyp1fkvviu1vb6wdg].[__tableau_internal_object_id__].[cnt:SBAnational.csv_D9A1403D7B304F07BE2B4212C786765D:qk]' />
+              <text column='[federated.04j0cu214ujbyp1fkvviu1vb6wdg].[__tableau_internal_object_id__].[cnt:SBAnational.csv_D9A1403D7B304F07BE2B4212C786765D:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.04j0cu214ujbyp1fkvviu1vb6wdg].[none:BankState:nk]</cols>
+      </table>
+      <simple-id uuid='{9D84F664-2C14-49C1-A119-A4028FDF8D9D}' />
+    </worksheet>
+    <worksheet name='State'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='SBAnational' name='federated.04j0cu214ujbyp1fkvviu1vb6wdg' />
+          </datasources>
+          <datasource-dependencies datasource='federated.04j0cu214ujbyp1fkvviu1vb6wdg'>
+            <column caption='CHATGPT BT' datatype='real' name='[Calculation_3534129458862702595]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM(IF [MIS_Status] = &apos;CHGOFF&apos; THEN 1 ELSE 0 END) / COUNTD([LoanNr_ChkDgt])' />
+            </column>
+            <column aggregation='Count' caption='LoanNr ChkDgt' datatype='integer' name='[LoanNr_ChkDgt]' role='measure' type='quantitative' />
+            <column aggregation='CountD' caption='MIS Status' datatype='string' name='[MIS_Status]' role='dimension' type='nominal' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_3534129458862702595]' derivation='User' name='[usr:Calculation_3534129458862702595:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.04j0cu214ujbyp1fkvviu1vb6wdg].[none:State:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.04j0cu214ujbyp1fkvviu1vb6wdg].[usr:Calculation_3534129458862702595:qk]' shelf='columns' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <reference-line axis-column='[federated.04j0cu214ujbyp1fkvviu1vb6wdg].[usr:Calculation_3534129458862702595:qk]' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-pane' value-column='[federated.04j0cu214ujbyp1fkvviu1vb6wdg].[usr:Calculation_3534129458862702595:qk]' z-order='1' />
+          </pane>
+        </panes>
+        <rows>[federated.04j0cu214ujbyp1fkvviu1vb6wdg].[usr:Calculation_3534129458862702595:qk]</rows>
+        <cols>[federated.04j0cu214ujbyp1fkvviu1vb6wdg].[none:State:nk]</cols>
+      </table>
+      <simple-id uuid='{E51433C7-B8D2-4C39-864D-84FBC88ACF33}' />
+    </worksheet>
+    <worksheet name='Term'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='SBAnational' name='federated.04j0cu214ujbyp1fkvviu1vb6wdg' />
+          </datasources>
+          <datasource-dependencies datasource='federated.04j0cu214ujbyp1fkvviu1vb6wdg'>
+            <column aggregation='CountD' caption='MIS Status' datatype='string' name='[MIS_Status]' role='dimension' type='nominal' />
+            <column aggregation='None' datatype='integer' name='[Term (bin)]' role='dimension' type='quantitative'>
+              <calculation class='bin' decimals='1' formula='[Term]' peg='0' size='22.1' />
+            </column>
+            <column datatype='integer' name='[Term]' role='measure' type='quantitative' />
+            <column-instance column='[Term]' derivation='Count' name='[cnt:Term:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[MIS_Status]' derivation='None' name='[none:MIS_Status:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Term (bin)]' derivation='None' name='[none:Term (bin):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-left' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+            <encodings>
+              <color column='[federated.04j0cu214ujbyp1fkvviu1vb6wdg].[none:MIS_Status:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.04j0cu214ujbyp1fkvviu1vb6wdg].[cnt:Term:qk]</rows>
+        <cols>[federated.04j0cu214ujbyp1fkvviu1vb6wdg].[none:Term (bin):qk]</cols>
+        <show-full-range>
+          <column>[federated.04j0cu214ujbyp1fkvviu1vb6wdg].[Term (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{E7A101BD-4FBB-4093-89B5-496205E2C507}' />
+    </worksheet>
+    <worksheet name='Top cities default ratio'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='SBAnational' name='federated.04j0cu214ujbyp1fkvviu1vb6wdg' />
+          </datasources>
+          <datasource-dependencies datasource='federated.04j0cu214ujbyp1fkvviu1vb6wdg'>
+            <column caption='Approval Date' datatype='date' name='[ApprovalDate]' role='dimension' type='ordinal' />
+            <column caption='CHATGPT BT' datatype='real' name='[Calculation_3534129458862702595]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM(IF [MIS_Status] = &apos;CHGOFF&apos; THEN 1 ELSE 0 END) / COUNTD([LoanNr_ChkDgt])' />
+            </column>
+            <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+            <column aggregation='Count' caption='LoanNr ChkDgt' datatype='integer' name='[LoanNr_ChkDgt]' role='measure' type='quantitative' />
+            <column aggregation='CountD' caption='MIS Status' datatype='string' name='[MIS_Status]' role='dimension' type='nominal' />
+            <column-instance column='[LoanNr_ChkDgt]' derivation='Count' name='[cnt:LoanNr_ChkDgt:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[ApprovalDate]' derivation='None' name='[none:ApprovalDate:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[City]' derivation='None' name='[none:City:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_3534129458862702595]' derivation='User' name='[usr:Calculation_3534129458862702595:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.04j0cu214ujbyp1fkvviu1vb6wdg].[none:ApprovalDate:qk]' included-values='in-range'>
+            <min>#1967-02-28#</min>
+            <max>#2005-10-25#</max>
+          </filter>
+          <filter class='categorical' column='[federated.04j0cu214ujbyp1fkvviu1vb6wdg].[none:City:nk]'>
+            <groupfilter count='50' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='COUNT([LoanNr_ChkDgt])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:City:nk]' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-manual-selection-is-empty='true' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <computed-sort column='[federated.04j0cu214ujbyp1fkvviu1vb6wdg].[none:City:nk]' direction='DESC' using='[federated.04j0cu214ujbyp1fkvviu1vb6wdg].[cnt:LoanNr_ChkDgt:qk]' />
+          <slices>
+            <column>[federated.04j0cu214ujbyp1fkvviu1vb6wdg].[none:City:nk]</column>
+            <column>[federated.04j0cu214ujbyp1fkvviu1vb6wdg].[none:ApprovalDate:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.04j0cu214ujbyp1fkvviu1vb6wdg].[usr:Calculation_3534129458862702595:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.04j0cu214ujbyp1fkvviu1vb6wdg].[usr:Calculation_3534129458862702595:qk]</rows>
+        <cols>[federated.04j0cu214ujbyp1fkvviu1vb6wdg].[none:City:nk]</cols>
+      </table>
+      <simple-id uuid='{F0F9A21D-B102-488E-8433-919F1F1362C0}' />
+    </worksheet>
+    <worksheet name='Top cities default ratio (2)'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='SBAnational' name='federated.04j0cu214ujbyp1fkvviu1vb6wdg' />
+          </datasources>
+          <datasource-dependencies datasource='federated.04j0cu214ujbyp1fkvviu1vb6wdg'>
+            <column caption='CHATGPT BT' datatype='real' name='[Calculation_3534129458862702595]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM(IF [MIS_Status] = &apos;CHGOFF&apos; THEN 1 ELSE 0 END) / COUNTD([LoanNr_ChkDgt])' />
+            </column>
+            <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+            <column aggregation='Count' caption='LoanNr ChkDgt' datatype='integer' name='[LoanNr_ChkDgt]' role='measure' type='quantitative' />
+            <column aggregation='CountD' caption='MIS Status' datatype='string' name='[MIS_Status]' role='dimension' type='nominal' />
+            <column-instance column='[LoanNr_ChkDgt]' derivation='Count' name='[cnt:LoanNr_ChkDgt:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[City]' derivation='None' name='[none:City:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_3534129458862702595]' derivation='User' name='[usr:Calculation_3534129458862702595:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.04j0cu214ujbyp1fkvviu1vb6wdg].[none:City:nk]'>
+            <groupfilter count='50' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='COUNT([LoanNr_ChkDgt])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:City:nk]' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-manual-selection-is-empty='true' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <computed-sort column='[federated.04j0cu214ujbyp1fkvviu1vb6wdg].[none:City:nk]' direction='DESC' using='[federated.04j0cu214ujbyp1fkvviu1vb6wdg].[cnt:LoanNr_ChkDgt:qk]' />
+          <slices>
+            <column>[federated.04j0cu214ujbyp1fkvviu1vb6wdg].[none:City:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.04j0cu214ujbyp1fkvviu1vb6wdg].[usr:Calculation_3534129458862702595:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.04j0cu214ujbyp1fkvviu1vb6wdg].[usr:Calculation_3534129458862702595:qk]</rows>
+        <cols>[federated.04j0cu214ujbyp1fkvviu1vb6wdg].[none:City:nk]</cols>
+      </table>
+      <simple-id uuid='{A40239D1-30CF-4BFB-B6F7-3E3EC52050C4}' />
+    </worksheet>
+    <worksheet name='Univariate'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='SBAnational' name='federated.04j0cu214ujbyp1fkvviu1vb6wdg' />
+          </datasources>
+          <datasource-dependencies datasource='federated.04j0cu214ujbyp1fkvviu1vb6wdg'>
+            <_.fcp.ObjectModelTableType.false...column caption='SBAnational.csv' datatype='integer' name='[__tableau_internal_object_id__].[SBAnational.csv_D9A1403D7B304F07BE2B4212C786765D]' role='measure' type='quantitative' />
+            <column aggregation='CountD' caption='MIS Status' datatype='string' name='[MIS_Status]' role='dimension' type='nominal' />
+            <_.fcp.ObjectModelTableType.true...column caption='SBAnational.csv' datatype='table' name='[__tableau_internal_object_id__].[SBAnational.csv_D9A1403D7B304F07BE2B4212C786765D]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[SBAnational.csv_D9A1403D7B304F07BE2B4212C786765D]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:SBAnational.csv_D9A1403D7B304F07BE2B4212C786765D:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[MIS_Status]' derivation='None' name='[none:MIS_Status:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.04j0cu214ujbyp1fkvviu1vb6wdg].[none:MIS_Status:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.04j0cu214ujbyp1fkvviu1vb6wdg].[__tableau_internal_object_id__].[cnt:SBAnational.csv_D9A1403D7B304F07BE2B4212C786765D:qk]</rows>
+        <cols>[federated.04j0cu214ujbyp1fkvviu1vb6wdg].[none:MIS_Status:nk]</cols>
+      </table>
+      <simple-id uuid='{C6DDAE81-9A00-48B1-81D9-E08421D11287}' />
+    </worksheet>
+    <worksheet name='Urban/Rural'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='SBAnational' name='federated.04j0cu214ujbyp1fkvviu1vb6wdg' />
+          </datasources>
+          <datasource-dependencies datasource='federated.04j0cu214ujbyp1fkvviu1vb6wdg'>
+            <column aggregation='Count' caption='LoanNr ChkDgt' datatype='integer' name='[LoanNr_ChkDgt]' role='measure' type='quantitative' />
+            <column aggregation='CountD' caption='MIS Status' datatype='string' name='[MIS_Status]' role='dimension' type='nominal' />
+            <column aggregation='Sum' caption='Urban Rural' datatype='integer' name='[UrbanRural]' role='dimension' type='ordinal' />
+            <column-instance column='[LoanNr_ChkDgt]' derivation='Count' name='[cnt:LoanNr_ChkDgt:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[MIS_Status]' derivation='None' name='[none:MIS_Status:nk]' pivot='key' type='nominal' />
+            <column-instance column='[UrbanRural]' derivation='None' name='[none:UrbanRural:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.04j0cu214ujbyp1fkvviu1vb6wdg].[none:MIS_Status:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.04j0cu214ujbyp1fkvviu1vb6wdg].[cnt:LoanNr_ChkDgt:qk]</rows>
+        <cols>[federated.04j0cu214ujbyp1fkvviu1vb6wdg].[none:UrbanRural:ok]</cols>
+      </table>
+      <simple-id uuid='{20CBDFF4-2B29-45E8-888D-7A21D51C4315}' />
+    </worksheet>
+    <worksheet name='Year approved'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='SBAnational' name='federated.04j0cu214ujbyp1fkvviu1vb6wdg' />
+          </datasources>
+          <datasource-dependencies datasource='federated.04j0cu214ujbyp1fkvviu1vb6wdg'>
+            <column caption='Approval Date' datatype='date' name='[ApprovalDate]' role='dimension' type='ordinal' />
+            <_.fcp.ObjectModelTableType.false...column caption='SBAnational.csv' datatype='integer' name='[__tableau_internal_object_id__].[SBAnational.csv_D9A1403D7B304F07BE2B4212C786765D]' role='measure' type='quantitative' />
+            <column aggregation='CountD' caption='MIS Status' datatype='string' name='[MIS_Status]' role='dimension' type='nominal' />
+            <_.fcp.ObjectModelTableType.true...column caption='SBAnational.csv' datatype='table' name='[__tableau_internal_object_id__].[SBAnational.csv_D9A1403D7B304F07BE2B4212C786765D]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[SBAnational.csv_D9A1403D7B304F07BE2B4212C786765D]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:SBAnational.csv_D9A1403D7B304F07BE2B4212C786765D:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[MIS_Status]' derivation='None' name='[none:MIS_Status:nk]' pivot='key' type='nominal' />
+            <column-instance column='[ApprovalDate]' derivation='Year' name='[yr:ApprovalDate:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.04j0cu214ujbyp1fkvviu1vb6wdg].[none:MIS_Status:nk]' />
+              <lod column='[federated.04j0cu214ujbyp1fkvviu1vb6wdg].[yr:ApprovalDate:ok]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.04j0cu214ujbyp1fkvviu1vb6wdg].[__tableau_internal_object_id__].[cnt:SBAnational.csv_D9A1403D7B304F07BE2B4212C786765D:qk]</rows>
+        <cols>[federated.04j0cu214ujbyp1fkvviu1vb6wdg].[yr:ApprovalDate:ok]</cols>
+      </table>
+      <simple-id uuid='{F805AA36-77C5-45F9-A9FD-3303A4581CA1}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='49000' id='3' name='Top cities default ratio' w='98400' x='800' y='1000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='49000' id='5' name='Top cities default ratio (2)' w='98400' x='800' y='50000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='13' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='12' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
+                <zone fixed-size='280' h='49000' id='3' is-fixed='true' name='Top cities default ratio' w='98400' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49000' id='5' is-fixed='true' name='Top cities default ratio (2)' w='98400' x='800' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{B253C7F2-3E0B-4EEB-A179-55AA09C7E5D0}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Year approved'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.04j0cu214ujbyp1fkvviu1vb6wdg].[none:MIS_Status:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{EB78369A-75ED-4E0E-9B3A-C661D368F560}' />
+    </window>
+    <window class='worksheet' name='Univariate'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.04j0cu214ujbyp1fkvviu1vb6wdg].[none:MIS_Status:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{1C0EBD97-7ADD-4DF9-8A8F-B411205AAE0D}' />
+    </window>
+    <window class='worksheet' name='Pie bank'>
+      <cards>
+        <edge name='left'>
+          <strip size='228'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.04j0cu214ujbyp1fkvviu1vb6wdg].[__tableau_internal_object_id__].[cnt:SBAnational.csv_D9A1403D7B304F07BE2B4212C786765D:qk]' type='size' />
+            <card pane-specification-id='0' param='[federated.04j0cu214ujbyp1fkvviu1vb6wdg].[none:MIS_Status:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{E63B72C8-6868-4CD7-8FA4-7BB34127D855}' />
+    </window>
+    <window class='worksheet' name='Sheet 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.04j0cu214ujbyp1fkvviu1vb6wdg].[none:MIS_Status:nk]' type='color' />
+            <card pane-specification-id='0' param='[federated.04j0cu214ujbyp1fkvviu1vb6wdg].[__tableau_internal_object_id__].[cnt:SBAnational.csv_D9A1403D7B304F07BE2B4212C786765D:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{6E74E13D-3D0F-4D0A-91D4-EDF0C0D5010A}' />
+    </window>
+    <window class='worksheet' name='Bar bank'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{6E8150A8-9676-4459-BAE3-01BBE84B5D18}' />
+    </window>
+    <window class='worksheet' name='State'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{57918352-1559-4D8E-B465-FA8E927E3B39}' />
+    </window>
+    <window class='worksheet' name='Top cities default ratio'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{772144C1-18FB-4AD2-BA44-4B05E3C64084}' />
+    </window>
+    <window class='worksheet' name='Top cities default ratio (2)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{733FEC23-E6CA-4CC6-9713-AEC8BF74F28D}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Top cities default ratio'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Top cities default ratio (2)'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{5CBA2D94-51C2-4BE6-AD10-75892782A428}' />
+    </window>
+    <window class='worksheet' name='Revolving Line'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.04j0cu214ujbyp1fkvviu1vb6wdg].[none:MIS_Status:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{CC902498-B8FB-48EF-98C1-EB81BF8E9217}' />
+    </window>
+    <window class='worksheet' name='Low doc'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.04j0cu214ujbyp1fkvviu1vb6wdg].[none:MIS_Status:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{CD61AE98-C321-43B2-B4D3-003466990B81}' />
+    </window>
+    <window class='worksheet' name='Urban/Rural'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.04j0cu214ujbyp1fkvviu1vb6wdg].[none:MIS_Status:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{618005F0-739E-457A-8019-4E10DC3E7BD8}' />
+    </window>
+    <window class='worksheet' name='Jobs'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.04j0cu214ujbyp1fkvviu1vb6wdg].[none:LoanNr_ChkDgt:qk]' type='size' />
+            <card pane-specification-id='0' param='[federated.04j0cu214ujbyp1fkvviu1vb6wdg].[none:MIS_Status:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{81B83B8D-7C04-4C85-9FF0-3D5FC480B3EE}' />
+    </window>
+    <window class='worksheet' name='Term'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.04j0cu214ujbyp1fkvviu1vb6wdg].[none:MIS_Status:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{51933FB3-C68C-4D9C-88B3-CEB56D0810B2}' />
+    </window>
+    <window class='worksheet' name='Sheet 16'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.04j0cu214ujbyp1fkvviu1vb6wdg].[none:MIS_Status:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{60E7E088-B427-41EF-B9C4-C9E001EE56ED}' />
+    </window>
+    <window class='worksheet' name='Sheet 17'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.04j0cu214ujbyp1fkvviu1vb6wdg].[none:MIS_Status:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{6E28B1AF-0A62-4CCB-93BB-5CB2A848FE4A}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 18'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.04j0cu214ujbyp1fkvviu1vb6wdg].[none:MIS_Status:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{87DB689D-D630-4E53-B12F-44564B6F81BD}' />
+    </window>
+    <window class='worksheet' name='Sheet 19'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{06B09526-9680-4DB1-BA1F-BCB3861F27B0}' />
+    </window>
+    <window class='worksheet' name='Sheet 20'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.04j0cu214ujbyp1fkvviu1vb6wdg].[none:MIS_Status:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D4DDA3AC-3205-4B87-B678-6EE54C077312}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='384' name='Sheet 18' width='384'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
