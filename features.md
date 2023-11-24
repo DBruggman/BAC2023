@@ -32,6 +32,7 @@ Feature engineer for interest rate.
 Feature engineer for comparative value.
 Feature engineer for loans signed in the X period before.
 Feature engineer for seasonality.
+Feature engineer for historical default ratio.
 
 ## Term
 **Keep it.**
@@ -47,7 +48,68 @@ Outliers: Fill with the mode (Existing)
 Maybe directly use as number.
 Bins: Think about doing logarithmic size?
     Encode: 
-Maybe feature engineer into one-hot labels for small, medium and big business?
+Maybe feature engineer into one-hot labels for small, medium and big business? Try different bins to see best results.
+
+## CreateJobs, RetainJobs
+Toss by now.
+We don't understand yet how these work.
+
+## FranchiseCode
+**Keep it.**
+Feature engineer for isFranchise binary encoding.
+Maybe identify biggest franchises too.
+
+78760: Subway
+68020: Quiznos
+50564: Mail Boxes Etc
+21780: Dairy Queen
+25650: Dunkin
+79140: Super 8
+
+## UrbanRural
+**Keep it.**
+Choose what to do with undefined! Keep it as a possible value?
+Encoding: One-hot for urban rural.
+
+## RevLineCr
+**Keep it.**
+Toss the really wierd ones. 
+Understand 0 as N. Maybe Y and T.
+Find out if the statiscal distributions are the same to see if we can combine them.
+Binary Encoding.
+
+## LowDoc
+**Keep it.**
+Toss the really wierd ones.
+Maybe understand 0 as N.
+Binary Encoding.
+
+## ChgOffDate
+Toss.
+It only depends on if the loan was paid.
+
+## DisbursementDate, DisbursementGross
+Toss.
+They are only units from the future.
+
+## BalanceGross
+Toss.
+Useless.
+
+## ChgOffPrinGr
+Toss.
+From the future.
+
+## GRAppv
+**Keep it.**
+How much is it approved. 
+
+## SBA_Appv
+**Keep it.**
+
+
+
+
 
 
 
