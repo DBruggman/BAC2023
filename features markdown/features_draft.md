@@ -1,10 +1,10 @@
 # Identified features
 
-## LoanNr_ChkDgt
+### LoanNr_ChkDgt
 Toss.
 Unique identifier. 
 
-## Name
+### Name
 Toss by now.
 Name of the company. Maybe engineer into the # of loans per company. 
 
@@ -23,7 +23,7 @@ Toss.
 
 ## NAICS
 **Keep it.**
-Encoding: Maybe one-hot for decision trees and default rate for deel learning and regression?
+Encoding: Maybe one-hot for decision trees and default rate for deep learning and regression?
 
 
 ## ApprovalDate, ApprovalYear
