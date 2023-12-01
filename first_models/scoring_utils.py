@@ -19,7 +19,7 @@ def get_best_kernels (results: pd.DataFrame) -> pd.DataFrame:
     ).rename_axis("kernel") # We create a field called kernel that encodes a model hyperparams.
     return results_df[["params", "rank_test_score", "mean_test_score"]]
 
-def get_metrics (y_pred, y_true, name: str) -> float:
+def get_metrics (y_true, y_pred, name: str) -> float:
     """Returns the metric dataframe for a prediction and a ground truth.
 
     Args:
@@ -30,10 +30,10 @@ def get_metrics (y_pred, y_true, name: str) -> float:
         float: The metrics dataframe.
     """
     metrics= [
-        recall_score(y_pred, y_true),
-        precision_score(y_pred, y_true),
-        roc_auc_score(y_pred, y_true),
-        f1_score(y_pred, y_true)
+        recall_score(y_true, y_pred),
+        precision_score(y_true, y_pred),
+        roc_auc_score(y_true, y_pred),
+        f1_score(y_true, y_pred)
     ]
 
     metrics_df = pd.DataFrame(
@@ -44,7 +44,7 @@ def get_metrics (y_pred, y_true, name: str) -> float:
 
     return metrics_df
 
-def get_roc_plot (y_pred, y_true, name: str):
+def get_roc_plot (y_true, y_pred, name: str):
     """_summary_
 
     Args:
