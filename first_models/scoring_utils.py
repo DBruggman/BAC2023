@@ -4,6 +4,23 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import pandas as pd
 
+# Function to obtain profit from a loans set, it's predictions and the ground truth.
+def get_profit (X: pd.DataFrame, y_true: pd.DataFrame, y_pred: pd.DataFrame) -> float:
+    # Initialize an empty list to store profits for each sample
+    profits = []
+    
+    for index, row in X.iterrows():
+        if y_pred[index] == 0 and y_true[index] == 0:
+            profit = 0.05 * row['GrAppv']
+        elif y_pred[index] == 0 and y_true[index] == 1:
+            profit = -0.15 * row['GrAppv']
+        else:
+            profit = 0  # If conditions don't match, profit is zero
+        profits.append(profit)
+    
+    # Return the accumulated profit for all samples
+    return sum(profits)
+
 def get_best_kernels (results: pd.DataFrame) -> pd.DataFrame:
     """Returns a dataframe with the results, along with a kernel column
 
