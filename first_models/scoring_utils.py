@@ -34,7 +34,7 @@ def get_best_kernels (results: pd.DataFrame) -> pd.DataFrame:
     results_df = results_df.set_index(
         results_df["params"].apply(lambda x: "_".join(str(val) for val in x.values()))
     ).rename_axis("kernel") # We create a field called kernel that encodes a model hyperparams.
-    return results_df[["params", "rank_test_score", "mean_test_score"]]
+    return results_df[["params", "mean_test_score", 'mean_fit_time']]
 
 def get_metrics (y_true, y_pred, name: str) -> float:
     """Returns the metric dataframe for a prediction and a ground truth.
