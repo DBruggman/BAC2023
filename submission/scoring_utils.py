@@ -5,21 +5,18 @@ import seaborn as sns
 import pandas as pd
 
 # Function to obtain profit from a loans set, it's predictions and the ground truth.
-def get_profit (X: pd.DataFrame, y_true: pd.DataFrame, y_pred: pd.DataFrame) -> float:
-    # Initialize an empty list to store profits for each sample
-    profits = []
-    
-    for index, row in X.iterrows():
-        if y_pred[index] == 0 and y_true[index] == 0:
-            profit = 0.05 * row['GrAppv']
-        elif y_pred[index] == 0 and y_true[index] == 1:
-            profit = -0.15 * row['GrAppv']
-        else:
-            profit = 0  # If conditions don't match, profit is zero
-        profits.append(profit)
-    
-    # Return the accumulated profit for all samples
-    return sum(profits)
+def get_profit(X: pd.DataFrame, y_true: pd.DataFrame, y_pred: pd.DataFrame) -> float:
+    # Calculate profit for y_pred = 0 and y_true = 0
+    profit_zero_pred_zero_true = 0.05 * X.loc[(y_pred == 0) & (y_true == 0), 'GrAppv'].sum()
+
+    # Calculate profit for y_pred = 0 and y_true = 1
+    profit_zero_pred_one_true = -0.15 * X.loc[(y_pred == 0) & (y_true == 1), 'GrAppv'].sum()
+
+    # Calculate total profit
+    total_profit = profit_zero_pred_zero_true + profit_zero_pred_one_true
+
+    return total_profit
+
 
 def get_best_kernels (results: pd.DataFrame) -> pd.DataFrame:
     """Returns a dataframe with the results, along with a kernel column
@@ -56,6 +53,32 @@ def get_metrics (y_true, y_pred, name: str) -> float:
     metrics_df = pd.DataFrame(
         [metrics], 
         columns = ['Recall', 'Precision', 'ROC', 'F1'], 
+        index=[name]
+    )
+
+    return metrics_df
+
+def get_metrics_and_profit (X, y_true, y_pred, name: str) -> float:
+    """Returns the metric dataframe for a prediction and a ground truth.
+
+    Args:
+        y_pred (any): Predictions.
+        y_true (_type_): True Labels.
+
+    Returns:
+        float: The metrics dataframe.
+    """
+    metrics= [
+        recall_score(y_true, y_pred),
+        precision_score(y_true, y_pred),
+        roc_auc_score(y_true, y_pred),
+        f1_score(y_true, y_pred),
+        format(get_profit(X, y_true, y_pred), ",.2f")
+    ]
+
+    metrics_df = pd.DataFrame(
+        [metrics], 
+        columns = ['Recall', 'Precision', 'ROC', 'F1', 'Profit, $'], 
         index=[name]
     )
 
