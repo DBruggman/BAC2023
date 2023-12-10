@@ -7,10 +7,10 @@ import pandas as pd
 # Function to obtain profit from a loans set, it's predictions and the ground truth.
 def get_profit(X: pd.DataFrame, y_true: pd.DataFrame, y_pred: pd.DataFrame) -> float:
     # Calculate profit for y_pred = 0 and y_true = 0
-    profit_zero_pred_zero_true = 0.05 * X.loc[(y_pred == 0) & (y_true == 0), 'GrAppv'].sum()
+    profit_zero_pred_zero_true = 0.05 * X.loc[(y_pred == 0) & (y_true == 0), 'DisbursementGross'].sum()
 
     # Calculate profit for y_pred = 0 and y_true = 1
-    profit_zero_pred_one_true = -0.15 * X.loc[(y_pred == 0) & (y_true == 1), 'GrAppv'].sum()
+    profit_zero_pred_one_true = -0.15 * X.loc[(y_pred == 0) & (y_true == 1), 'DisbursementGross'].sum()
 
     # Calculate total profit
     total_profit = profit_zero_pred_zero_true + profit_zero_pred_one_true

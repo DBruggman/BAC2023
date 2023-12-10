@@ -1,7 +1,3 @@
-SBAnational.csv
 .DS_Store
-df_encoded.csv
-df_clean.csv
-df_encoded_with_interest_rate.csv
-df_encoded_interest.csv
 *.csv
+*.pyc
